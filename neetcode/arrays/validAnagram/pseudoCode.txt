@@ -1,0 +1,21 @@
+Is Anagram 
+
+Check if two strings are anagrams of each other
+string s = ""
+string t = ""
+
+function 
+    if len(s) != len(t):
+        return false
+    
+    // Create two dictionaries to store the characters of the strings
+    // if the number of occurences are same then it is valid anagram
+    dicts = {}
+    dictt = {}
+
+    for i in range(len(s)):
+        dicts[s[i]] = dicts.get(s[i], 0) + 1
+        dictt[t[i]] = dictt.get(t[i], 0) + 1
+
+    
+
